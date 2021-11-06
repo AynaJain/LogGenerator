@@ -6,7 +6,7 @@ import com.typesafe.config.ConfigFactory
 import java.io.File
 
 object callings3:
-  val config = ConfigFactory.load()
+  val config = ConfigFactory.load("application")
   val bucket_name: String = config.getString("s3utilities.s3bucket")
   val file_path: String = config.getString("s3utilities.file_path")
   val key_name: String = config.getString("s3utilities.key")
