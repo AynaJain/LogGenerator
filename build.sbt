@@ -10,6 +10,8 @@ val typesafeConfigVersion = "1.4.1"
 val apacheCommonIOVersion = "2.11.0"
 val scalacticVersion = "3.2.9"
 val generexVersion = "1.0.2"
+val awsjavaVersion = "1.12.90"
+val awsjavas3Version = "1.12.98"
 
 resolvers += Resolver.jcenterRepo
 
@@ -23,5 +25,7 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % scalacticVersion % Test,
   "org.scalatest" %% "scalatest-featurespec" % scalacticVersion % Test,
   "com.typesafe" % "config" % typesafeConfigVersion,
-  "com.github.mifmif" % "generex" % generexVersion
-)
+  "com.github.mifmif" % "generex" % generexVersion,
+  "com.amazonaws" % "aws-java-sdk" % awsjavaVersion,
+  "com.amazonaws" % "aws-java-sdk-s3" % awsjavas3Version
+  )
