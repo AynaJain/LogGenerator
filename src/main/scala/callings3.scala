@@ -8,7 +8,8 @@ import java.io.File
 //Reference: https://codedestine.com/aws-s3-putobject-java/
 //Reference: https://stackoverflow.com/questions/42230086/writing-a-file-into-amazon-s3-aws-storage-using-scala
 
-object callings3 {
+
+object callings3:
   val config = ConfigFactory.load("application")
   val bucketName: String = config.getString("s3utilities.s3bucket")
   val filePath: String = config.getString("s3utilities.file_path")
@@ -22,4 +23,3 @@ object callings3 {
       System.err.println(e)
       System.exit(1)
   }
-}
