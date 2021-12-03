@@ -1,3 +1,4 @@
+
 name := "LogFileGenerator"
 
 version := "0.1"
@@ -12,6 +13,11 @@ val scalacticVersion = "3.2.9"
 val generexVersion = "1.0.2"
 val awsjavaVersion = "1.12.90"
 val awsjavas3Version = "1.12.98"
+
+assembly/ assemblyMergeStrategy := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
 
 resolvers += Resolver.jcenterRepo
 

@@ -7,7 +7,7 @@
 
 
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>./generatedlogmessages/generatedlogmessages.log</file>
+        <file>./log/log.log</file>
         <append>true</append>
         <immediateFlush>true</immediateFlush>
 
